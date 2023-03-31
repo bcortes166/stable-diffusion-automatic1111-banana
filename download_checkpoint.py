@@ -10,6 +10,7 @@ HF_TOKEN = os.environ.get('HF_TOKEN', '')
 CHUNK_SIZE = 1024 * 1024
 
 def get_filename(MODEL_URL):
+    return 'models/Stable-diffusion/model.safetensors' #MODIFIED BY SPACEREX
     if '.safetensors' in MODEL_URL:
         return 'models/Stable-diffusion/model.safetensors'
     else:
